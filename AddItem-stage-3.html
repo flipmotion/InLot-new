@@ -1,0 +1,275 @@
+<!DOCTYPE html>
+<html lang="ru_RU"> 
+<head>
+	<meta charset="utf-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title></title>
+	<script src="assets/js/jquery.min.js" type="text/javascript"></script>
+	<!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
+	<!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+	<!--[if lt IE 9]>
+		<script src="https://oss.maxcdn.com/html5shiv/3.7.2/html5shiv.min.js"></script>
+		<script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
+		<![endif]-->
+	</head>
+	<body>
+		<!-- sticky -->
+		<div class="sticky-page">
+			<!-- header -->
+			<section class="header">
+				<nav class="navbar navbar-default">
+					<div class="container">
+						<!-- Brand and toggle get grouped for better mobile display -->
+						<div class="navbar-header">
+							<button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" aria-expanded="false">
+								<span class="sr-only">Toggle navigation</span>
+								<span class="icon-bar"></span>
+								<span class="icon-bar"></span>
+								<span class="icon-bar"></span>
+							</button>
+							<a class="navbar-brand" href="#"><img src="assets/img/logo.png" alt=""></a>
+						</div>
+
+						<!-- Collect the nav links, forms, and other content for toggling -->
+						<div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+							<ul class="nav navbar-nav bordered">
+								<li><p>ТОРГОВАЯ<br>ПЛОЩАДКА</p></li>
+								<li>
+									<div class="icon location my-flex">
+										<div><i class="fa fa-map-marker"></i></div>
+										<div><p>Санкт-Петербург</p></div>
+									</div>
+								</li>
+								<li>
+									<p class="number"><a href="tel:8 (800) 123-34-45">8 (800) 123-34-45</a></p>
+								</li>
+							</ul>
+							<ul class="nav navbar-nav navbar-right">
+								<li><a href="#" class="LogIn icon my-flex"><div><i></i></div><div><p>Войти</p></div></a></li>
+								<li><a href="#" class="btn btn-orange">Купить, продать</a></li>
+							</ul>
+						</div><!-- /.navbar-collapse -->
+					</div><!-- /.container-fluid -->
+				</nav>
+			</section>
+			<!-- header END -->
+			<!-- content  -->
+			<section class="content">
+				<div class="container">
+					<!--title and description-->
+					<div class="row">
+						<div class="col-xs-12 col-md-12 col-sm-12 ">
+							<h1>Новый товар</h1>
+						</div>
+					</div><!-- title end -->
+					<!-- Add item -->
+					<div class="Add-item">
+						<!-- Nav tabs -->
+						<div class="row">
+							<div class="col-xs-12 col-md-10 col-sm-10">
+								<ul class="Add-item-navigation">
+									<li class="">
+										<a class="btn btn-info" href="#tab1" aria-controls="tab1" role="tab" data-toggle="tab">1. Выбор категории</a>
+									</li>
+									<li class="">
+										<a class="btn btn-info" href="#tab2" aria-controls="tab2" role="tab" data-toggle="tab">2. Информация о товаре</a>
+									</li>
+									<li class="active">
+										<a class="btn btn-info" href="#tab3" aria-controls="tab3" role="tab" data-toggle="tab">3. Цена, доставка и оплата</a>
+									</li>
+									<li class="disabled">
+										<a class="btn btn-info" href="#tab4" aria-controls="tab4" role="tab" data-toggle="tab">4. Подтверждение</a>
+									</li>
+								</ul>
+							</div>
+						</div><!-- Nav tabs END-->
+						<!-- Nav tabs content -->
+						<div class="row">
+							<div class="col-xs-12 col-md-12 col-sm-12">
+								
+								<div class="row">
+									<!-- left side -->
+									<div class="col-xs-12 col-md-7 col-sm-7">
+										<!-- Tab panes -->
+										<div class="tab-content Add-item-tab-content">
+											<div class="tab-pane" id="tab1">
+												step 1
+											</div>
+											<div class="tab-pane" id="tab2">
+
+											</div>
+											<div class="tab-pane active" id="tab3">
+												<ul class="Add-item-navigation-inner">
+													<li class="active">
+														<a class="" href="#tabInner1" aria-controls="tabInner1" role="tab" data-toggle="tab">Продать сейчас</a>
+													</li>
+													<li class="">
+														<a class="" href="#tabInner2" aria-controls="tabInner2" role="tab" data-toggle="tab">Продать на аукционе</a>
+													</li>
+												</ul>
+												<div class="tab-content Add-item-tab-content">
+													<div class="tab-pane active" id="tabInner1">
+														<div class="row">
+															<div class="col-xs-12 col-md-12 col-sm-12">
+																<form class="Settings" autocomplete="off">
+																	<!--Цена -->
+																	<div class="row">
+																		<div class="col-xs-12 col-md-4 col-sm-4">
+																			<div class="form-group">
+																				<div class="row">
+																					<div class="col-xs-12 col-md-12 col-sm-12">
+																						<label>Цена</label>
+																					</div>
+																					<div class="col-xs-12 col-md-12 col-sm-12">
+
+																						<div class="input-group">
+																							<input type="text"  name="carPrice" class="form-control" placeholder="Цена">
+																							<span class="input-group-addon">₽</span>
+																						</div>
+																					</div>
+																				</div>
+																			</div>
+																		</div>
+																	</div><!--Цена END-->
+
+																	<div class="row">
+																		<div class="col-xs-12 col-md-12 col-sm-12">
+																			<hr>
+																		</div>
+																	</div>
+																	<!--Информация о доставке -->
+																	<div class="row">
+																		<div class="col-xs-12 col-md-12 col-sm-12">
+																			<div class="form-group">
+																				<div class="row">
+																					<div class="col-xs-12 col-md-12 col-sm-12">
+																						<label>Информация о доставке</label>
+																					</div>
+																					<div class="col-xs-12 col-md-12 col-sm-12">
+																						<textarea type="text" name="carDeliveryInformation" class="form-control" rows="6"></textarea>
+																					</div>
+																				</div>
+																			</div>
+																		</div>
+																	</div><!--Информация о доставке END-->
+																	<div class="row">
+																		<div class="col-xs-12 col-md-12 col-sm-12">
+																			<hr>
+																		</div>
+																	</div>
+
+																	<!--Требования к оплате -->
+																	<div class="row">
+																		<div class="col-xs-12 col-md-12 col-sm-12">
+																			<div class="form-group">
+																				<div class="row">
+																					<div class="col-xs-12 col-md-12 col-sm-12">
+																						<label>Требования к оплате</label>
+																					</div>
+																					<div class="col-xs-12 col-md-12 col-sm-12">
+																						<textarea type="text" name="carPaymantsDetails" class="form-control" rows="6"></textarea>
+																					</div>
+																				</div>
+																			</div>
+																		</div>
+																	</div><!--Требования к оплате END-->
+																	<div class="row">
+																		<div class="col-xs-12 col-md-1 col-sm-2">
+																			<a href="#" class="">Назад</a>
+
+																		</div>
+																		<div class="col-xs-12 col-md-3 col-sm-3">
+																			<button type="submit" class="btn btn-orange btn-block">Далее</button>
+																		</div>
+																	</div>
+																	<!-- удалю это на шаге 3 для общего контент блока сделаю отступ-->
+																	<div class="row">
+																		<div class="col-xs-12 col-md-12 col-sm-12">
+																			<br>
+																			<br>
+																		</div>
+																	</div><!-- удалю это на шаге 3 для общего контент блока сделаю отступ END-->
+																</form>
+															</div>
+														</div>
+													</div>
+													<div class="tab-pane" id="tabInner2">
+														step 2
+													</div>
+												</div>
+
+											</div>
+											<div class="tab-pane" id="tab4">4</div>
+										</div>
+									</div><!-- left side END-->
+									<!-- right side -->
+									<div class="col-xs-12 col-md-5 col-sm-5">
+										<div class="B-info">
+											<p>Метафора, за счет использования параллелизмов и повторов на разных языковых уровнях, традиционно отталкивает стиль.</p>
+											<p>Вопрос о популярности произведений того или иного автора относится к сфере культурологии, однако заимствование аннигилирует</p>
+											<p>былинный лирический субъект, что связано со смысловыми оттенками, логическим выделением или с <a href="#">синтаксической омонимией</a>.</p>
+										</div>
+									</div><!-- right side END-->
+									
+								</div>
+
+							</div>
+						</div><!-- Nav tabs content END-->
+					</div><!-- Add item END-->
+
+				</div>
+			</section>
+			<!-- content END -->
+		</div>
+		<!-- sticky END -->
+		<!-- footer -->
+		<section class="footer">
+			<section class="footer-lvl-1">
+				<div class="container">
+					<div class="row">
+						<div class="col-xs-12 col-md-8 col-sm-8">
+							<ul class="flex">
+								<li><a href="#">О проекте</a></li>
+								<li><a href="#">Правила</a></li>
+								<li><a href="#">Обратная связь</a></li>
+								<li><a href="#">Помощь</a></li>
+								<li><a href="#">Пользовательское соглашение</a></li>
+							</ul>
+						</div>
+						<div class="col-xs-12 col-md-4 col-sm-4">
+							<div class="flex end">
+								<div><p class="copy">&copy; 2016, inlot.ru</p></div>
+								<div><p class="team">Разработка — <a href="#">Horse Heads</a></p></div>
+							</div>
+						</div>	
+					</div>
+				</div>
+			</section>
+		</section>
+		<!-- footer END-->
+
+		<!-- include frameworks and app.less -->
+		<link href='assets/css/app.min.css' rel='stylesheet' type='text/css'>
+		<script src="assets/js/bootstrap.min.js" type="text/javascript"></script>
+		<script src="assets/js/jquery.maskedinput.js" type="text/javascript"></script>
+		<!--Select -->
+		<script src="assets/js/select2.min.js" type="text/javascript"></script>
+		<!--Select END-->
+
+		<!--Validation -->
+		<script src="assets/js/formValidation.min.js" type="text/javascript"></script>
+		<script src="assets/js/framework/bootstrap.min.js" type="text/javascript"></script>
+		<script src="assets/js/language/ru_RU.js" type="text/javascript"></script>
+		<!--Validation END-->
+
+		<!--file upload -->
+		<script src="assets/js/canvas-to-blob.min.js" type="text/javascript"></script>
+		<script src="assets/js/fileinput.min.js" type="text/javascript"></script>
+		<script src="assets/js/language/fileinput_locale_ru.js" type="text/javascript"></script>
+		<!--file upload END -->
+
+		<script src="assets/js/app.js" type="text/javascript"></script>
+	</body>
+
+	</html>

@@ -1,0 +1,43 @@
+//Profile items
+.Profile {
+	&-header {
+		margin: 20px -10px 0 -10px;
+		display: flex;
+		>div {
+			padding: 0 10px;
+			&:nth-child(2) {
+				div:nth-child(2) {
+					display: flex;
+				}
+			}
+			&:nth-child(3) {
+				padding-top: 4px;
+			}
+		}
+		&--user {
+			padding-right: 60px;
+		}
+		&--name {
+			margin-top: 0;
+			margin-bottom: 0;
+			font-weight: 400;
+			color: #666;
+			line-height: 1;
+			margin-left: -2px;
+		}
+		&--from {
+			font-size: 11px;
+			color: #999;
+			margin-top: 3px;
+		}
+		&--settings {
+			display: flex;
+			span {
+				padding: 4px;
+			}
+			&:hover,&:focus {
+				text-decoration: none;
+			}
+		}
+	}
+}

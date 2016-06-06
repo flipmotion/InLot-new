@@ -1,0 +1,347 @@
+<!DOCTYPE html>
+<html lang="ru_RU"> 
+<head>
+	<meta charset="utf-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title></title>
+	<script src="assets/js/jquery.min.js" type="text/javascript"></script>
+	<!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
+	<!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+	<!--[if lt IE 9]>
+		<script src="https://oss.maxcdn.com/html5shiv/3.7.2/html5shiv.min.js"></script>
+		<script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
+		<![endif]-->
+	</head>
+	<body>
+		<!-- sticky -->
+		<div class="sticky-page">
+			<!-- header -->
+			<section class="header">
+				<nav class="navbar navbar-default">
+					<div class="container">
+						<!-- Brand and toggle get grouped for better mobile display -->
+						<div class="navbar-header">
+							<button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" aria-expanded="false">
+								<span class="sr-only">Toggle navigation</span>
+								<span class="icon-bar"></span>
+								<span class="icon-bar"></span>
+								<span class="icon-bar"></span>
+							</button>
+							<a class="navbar-brand" href="#"><img src="assets/img/logo.png" alt=""></a>
+						</div>
+
+						<!-- Collect the nav links, forms, and other content for toggling -->
+						<div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+							<ul class="nav navbar-nav bordered">
+								<li><p>ТОРГОВАЯ<br>ПЛОЩАДКА</p></li>
+								<li>
+									<div class="icon location my-flex">
+										<div><i class="fa fa-map-marker"></i></div>
+										<div><p>Санкт-Петербург</p></div>
+									</div>
+								</li>
+								<li>
+									<p class="number"><a href="tel:8 (800) 123-34-45">8 (800) 123-34-45</a></p>
+								</li>
+							</ul>
+							<ul class="nav navbar-nav navbar-right">
+								<li><a href="#" class="LogIn icon my-flex"><div><i></i></div><div><p>Войти</p></div></a></li>
+								<li><a href="#" class="btn btn-orange">Купить, продать</a></li>
+							</ul>
+						</div><!-- /.navbar-collapse -->
+					</div><!-- /.container-fluid -->
+				</nav>
+			</section>
+			<!-- header END -->
+			<!-- content  -->
+			<section class="content">
+				<div class="container">
+					<!--title and description-->
+					<div class="row">
+						<div class="col-xs-12 col-md-12 col-sm-12 ">
+							<h1>Новый товар</h1>
+						</div>
+					</div><!-- title end -->
+					<!-- Add item -->
+					<div class="Add-item">
+						<!-- Nav tabs -->
+						<div class="row">
+							<div class="col-xs-12 col-md-10 col-sm-10">
+								<ul class="Add-item-navigation">
+									<li class="active">
+										<a class="btn btn-info" href="#tab1" aria-controls="tab1" role="tab" data-toggle="tab">1. Выбор категории</a>
+									</li>
+									<li class="">
+										<a class="btn btn-info" href="#tab2" aria-controls="tab2" role="tab" data-toggle="tab">2. Информация о товаре</a>
+									</li>
+									<li class="disabled">
+										<a class="btn btn-info" href="#tab3" aria-controls="tab3" role="tab" data-toggle="tab">3. Цена, доставка и оплата</a>
+									</li>
+									<li class="disabled">
+										<a class="btn btn-info" href="#tab4" aria-controls="tab4" role="tab" data-toggle="tab">4. Подтверждение</a>
+									</li>
+								</ul>
+							</div>
+						</div><!-- Nav tabs END-->
+						<!-- Nav tabs content -->
+						<div class="row">
+							<div class="col-xs-12 col-md-10 col-sm-10">
+								<!-- Tab panes -->
+								<div class="tab-content Add-item-tab-content">
+									<div class="tab-pane active" id="tab1">
+										<div class="row">
+											<div class="col-xs-12 col-md-12 col-sm-12">
+												<h2>Выберите категорию</h2>
+											</div>
+										</div>
+										<form action="" data-item="add-item-stage-1">
+											<div class="row">
+												<div class="col-xs-12 col-md-12 col-sm-12">
+													<div class="Add-item-list-block">
+
+														<div data-item="category">
+															<ul>
+																<li>
+																	<p>Категория</p>
+																</li>
+																<li>
+																	<input name="category" value="0" type="radio" id="input1">
+																	<label class="btn btn-default" for="input1">
+																		Категория
+																	</label>
+																</li>
+																<li>
+																	<input name="category" value="1" type="radio" id="input2">
+																	<label class="btn btn-default" for="input2">
+																		Категория
+																	</label>
+																</li>
+																<li>
+																	<input name="category" value="2" type="radio" id="input3">
+																	<label class="btn btn-default" for="input3">
+																		Категория
+																	</label>
+																</li>
+															</ul>
+														</div>
+														<!--sub category-->
+														<div data-item="subcategory" class="hidden">
+															<ul>
+																<li>
+																	<p>Под категория 1</p>
+																</li>
+																<li>
+																	<input name="subcategory" value="0" type="radio" id="input4">
+																	<label class="btn btn-default" for="input4">
+																		Категория
+																	</label>
+																</li>
+																<li>
+																	<input name="subcategory" value="1" type="radio" id="input5">
+																	<label class="btn btn-default" for="input5">
+																		Категория
+																	</label>
+																</li>
+																<li>
+																	<input name="subcategory" value="2" type="radio" id="input6">
+																	<label class="btn btn-default" for="input6">
+																		Категория
+																	</label>
+																</li>
+															</ul>
+														</div>
+														<div data-item="subcategory" class="hidden">
+															<ul>
+																<li>
+																	<p>Под категория 2</p>
+																</li>
+																<li>
+																	<input name="subcategory" value="0" type="radio" id="input7">
+																	<label class="btn btn-default" for="input7">
+																		Категория
+																	</label>
+																</li>
+																<li>
+																	<input name="subcategory" value="1" type="radio" id="input8">
+																	<label class="btn btn-default" for="input8">
+																		Категория
+																	</label>
+																</li>
+																<li>
+																	<input name="subcategory" value="2" type="radio" id="input9">
+																	<label class="btn btn-default" for="input9">
+																		Категория
+																	</label>
+																</li>
+															</ul>
+														</div>
+														<div data-item="subcategory" class="hidden">
+															<ul>
+																<li>
+																	<p>Под категория 3</p>
+																</li>
+																<li>
+																	<input name="subcategory" value="0" type="radio" id="input10">
+																	<label class="btn btn-default" for="input10">
+																		Категория
+																	</label>
+																</li>
+																<li>
+																	<input name="subcategory" value="1" type="radio" id="input11">
+																	<label class="btn btn-default" for="input11">
+																		Категория
+																	</label>
+																</li>
+																<li>
+																	<input name="subcategory" value="2" type="radio" id="input12">
+																	<label class="btn btn-default" for="input12">
+																		Категория
+																	</label>
+																</li>
+															</ul>
+														</div>
+														<!--sub category end-->
+														<!--sub sub category-->
+														<div data-item="subsubcategory" class="hidden">
+															<ul>
+																<li>
+																	<p>Под Под категория 1</p>
+																</li>
+																<li>
+																	<input name="subsubcategory" value="0" type="radio" id="input13">
+																	<label class="btn btn-default" for="input13">
+																		Категория
+																	</label>
+																</li>
+																<li>
+																	<input name="subsubcategory" value="1" type="radio" id="input14">
+																	<label class="btn btn-default" for="input14">
+																		Категория
+																	</label>
+																</li>
+																<li>
+																	<input name="subsubcategory" value="2" type="radio" id="input15">
+																	<label class="btn btn-default" for="input15">
+																		Категория
+																	</label>
+																</li>
+															</ul>
+														</div>
+														<div data-item="subsubcategory" class="hidden">
+															<ul>
+																<li>
+																	<p>Под Под категория 2</p>
+																</li>
+																<li>
+																	<input name="subsubcategory" value="0" type="radio" id="input16">
+																	<label class="btn btn-default" for="input16">
+																		Категория
+																	</label>
+																</li>
+																<li>
+																	<input name="subsubcategory" value="1" type="radio" id="input17">
+																	<label class="btn btn-default" for="input17">
+																		Категория
+																	</label>
+																</li>
+																<li>
+																	<input name="subsubcategory" value="2" type="radio" id="input18">
+																	<label class="btn btn-default" for="input18">
+																		Категория
+																	</label>
+																</li>
+															</ul>
+														</div>
+														<div data-item="subsubcategory" class="hidden">
+															<ul>
+																<li>
+																	<p>Под Под категория 3</p>
+																</li>
+																<li>
+																	<input name="subsubcategory" value="0" type="radio" id="input19">
+																	<label class="btn btn-default" for="input19">
+																		Категория
+																	</label>
+																</li>
+																<li>
+																	<input name="subsubcategory" value="1" type="radio" id="input20">
+																	<label class="btn btn-default" for="input20">
+																		Категория
+																	</label>
+																</li>
+																<li>
+																	<input name="subsubcategory" value="2" type="radio" id="input21">
+																	<label class="btn btn-default" for="input21">
+																		Категория
+																	</label>
+																</li>
+															</ul>
+														</div>
+														<!--sub sub category end-->
+													</div>
+												</div>
+											</div>
+											<div class="row">
+												<div class="col-xs-12 col-md-12 col-sm-12">
+													<button type="submit" class="btn btn-orange col-sm-4 col-md-4">Далее</button>
+												</div>
+											</div>
+										</form>
+									</div>
+									<div class="tab-pane" id="tab2">2</div>
+									<div class="tab-pane" id="tab3">3</div>
+									<div class="tab-pane" id="tab4">4</div>
+								</div>
+							</div>
+						</div><!-- Nav tabs content END-->
+					</div><!-- Add item END-->
+
+				</div>
+			</section>
+			<!-- content END -->
+		</div>
+		<!-- sticky END -->
+		<!-- footer -->
+		<section class="footer">
+			<section class="footer-lvl-1">
+				<div class="container">
+					<div class="row">
+						<div class="col-xs-12 col-md-8 col-sm-8">
+							<ul class="flex">
+								<li><a href="#">О проекте</a></li>
+								<li><a href="#">Правила</a></li>
+								<li><a href="#">Обратная связь</a></li>
+								<li><a href="#">Помощь</a></li>
+								<li><a href="#">Пользовательское соглашение</a></li>
+							</ul>
+						</div>
+						<div class="col-xs-12 col-md-4 col-sm-4">
+							<div class="flex end">
+								<div><p class="copy">&copy; 2016, inlot.ru</p></div>
+								<div><p class="team">Разработка — <a href="#">Horse Heads</a></p></div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</section>
+		</section>
+		<!-- footer END-->
+
+		<!-- include frameworks and app.less -->
+		<link href='assets/css/app.min.css' rel='stylesheet' type='text/css'>
+		<script src="assets/js/bootstrap.min.js" type="text/javascript"></script>
+		<script src="assets/js/jquery.maskedinput.js" type="text/javascript"></script>
+		<!--Select -->
+		<script src="assets/js/select2.min.js" type="text/javascript"></script>
+		<!--Select END-->
+		
+		<!--Validation -->
+		<script src="assets/js/formValidation.min.js" type="text/javascript"></script>
+		<script src="assets/js/framework/bootstrap.min.js" type="text/javascript"></script>
+		<script src="assets/js/language/ru_RU.js" type="text/javascript"></script>
+		<!--Validation END-->
+		<script src="assets/js/app.js" type="text/javascript"></script>
+	</body>
+
+	</html>

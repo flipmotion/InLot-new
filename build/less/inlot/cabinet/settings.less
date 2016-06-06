@@ -1,0 +1,115 @@
+//left navigation in lk
+@import '../navigation/navigation.less';
+.Settings {
+	&-header {
+		padding: 20px 0 10px 0;
+		h1 {
+			margin-top:0;
+			font-weight: 400;
+			color: #666;
+			margin-bottom: 0;
+		}
+	}
+	&-content {
+		padding-bottom: 20px;
+		.opacity {
+			opacity: 0;
+		}
+		.gray {
+			color: #999;
+		}
+		h2 {
+			margin-top: 0;
+			color: #666;
+			font-weight: 400;
+		}
+		.current-email {
+			margin-bottom: 0;
+		}
+		.form-group {
+			&.has-error {
+				label {
+					color: @brand-danger;
+				}
+			}
+		}
+		.help-block {
+			margin-bottom: 0;
+		}
+		.my-tooltip {
+			margin-top: 30px;
+			margin-left: -10px;
+			&.no-fields {
+				margin-top: 8px;
+			}
+			i {
+				color: #999;
+			}
+			&--msg {
+				top: -20px;
+				position: relative;
+				height: 0px;
+			}
+		}
+		.tooltip {
+			position: absolute;
+			//top:-10px !important;
+			width: 100%;
+			margin-left: 10px;
+		}
+		.tooltip-arrow {
+			//top:20px !important;
+			border-right-color: #F2F2F2 !important;
+		}
+		.tooltip-inner {
+			background: #F2F2F2;
+			max-width: calc(~'320px');
+			padding-top: 5px;
+			a {
+				text-decoration: underline;
+			}
+			small {
+				font-size: 11px;
+				display: inline-block;
+				line-height: 1;
+				color: #999999;
+			}
+			&-header {
+				font-size: 12px;
+				color: #666;
+			}
+		}
+		hr {
+			border-color: #CCCCCC;
+			
+		}
+		.btn-file {
+			input {
+				display: none;
+			}
+		}
+		.with-icon {
+			display: flex;
+			align-content: center;
+			i {
+				font-size: 16px;
+				margin-bottom: -2px;
+				transform:translateY(1px);
+			}
+			> * {
+				padding: 0 3px;
+			}
+		}
+		//photo tests
+		.photo-upload-container {
+			margin-bottom: 20px;
+			margin-top: 5px;
+		}
+		.wrap-img {
+			img {
+				width: 200px;
+				max-width: 200px;
+			}
+		}
+	}
+}

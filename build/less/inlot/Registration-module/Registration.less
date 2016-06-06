@@ -1,0 +1,82 @@
+//content
+.Registration {
+	.icon-ok {
+		font-size: 70px;
+		margin: 60px 0 40px;
+	}
+	.tab-content>.tab-pane {
+		display: block;
+		visibility: hidden;
+		height: 0;
+		overflow: hidden;
+		&.active {
+			visibility: visible;
+			height: auto;
+			overflow: visible;
+		}
+	}
+	.nav-tabs.border-none {
+		border: none;
+	}
+	&-chose {
+		margin-bottom: 10px;
+		.radio {
+			margin-top:0;
+		}
+	}
+	&-alternative {
+		margin-top: 25px;
+		.or {
+			color: #999999;
+			position: relative;
+			&:after {
+				content: '';
+				left: 0;
+				right: 0;
+				height: 1px;
+				top:50%;
+				margin-top:-.5px;
+				background: #ddd;
+				position: absolute;
+			}
+			span {
+				background: #fff;
+				position: relative;
+				display: inline-block;
+				z-index: 1;
+				padding: 0 5px;
+			}
+		}
+	}
+	&-social {
+		display: flex;
+		justify-content: center;
+		&>div {
+			padding: 2px;
+		}
+		a {
+			display: inline-block;
+			width: 48px;
+			height: 34px;
+			background: url(../img/social.png) center center no-repeat;
+			&.vk {
+				background-position: -2px center;
+			}
+			&.od {
+				background-position: -54px center;
+			}
+			&.fb {
+				background-position: -106px center;
+			}
+			&.tw {
+				background-position: -158px center;
+			}
+			&.mr {
+				background-position: -210px center;
+			}
+			&.gp {
+				background-position: -262px center;
+			}
+		}
+	}
+}

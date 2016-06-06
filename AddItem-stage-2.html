@@ -1,0 +1,1325 @@
+<!DOCTYPE html>
+<html lang="ru_RU"> 
+<head>
+	<meta charset="utf-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title></title>
+	<script src="assets/js/jquery.min.js" type="text/javascript"></script>
+	<!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
+	<!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+	<!--[if lt IE 9]>
+		<script src="https://oss.maxcdn.com/html5shiv/3.7.2/html5shiv.min.js"></script>
+		<script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
+		<![endif]-->
+	</head>
+	<body>
+		<!-- sticky -->
+		<div class="sticky-page">
+			<!-- header -->
+			<section class="header">
+				<nav class="navbar navbar-default">
+					<div class="container">
+						<!-- Brand and toggle get grouped for better mobile display -->
+						<div class="navbar-header">
+							<button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" aria-expanded="false">
+								<span class="sr-only">Toggle navigation</span>
+								<span class="icon-bar"></span>
+								<span class="icon-bar"></span>
+								<span class="icon-bar"></span>
+							</button>
+							<a class="navbar-brand" href="#"><img src="assets/img/logo.png" alt=""></a>
+						</div>
+
+						<!-- Collect the nav links, forms, and other content for toggling -->
+						<div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+							<ul class="nav navbar-nav bordered">
+								<li><p>ТОРГОВАЯ<br>ПЛОЩАДКА</p></li>
+								<li>
+									<div class="icon location my-flex">
+										<div><i class="fa fa-map-marker"></i></div>
+										<div><p>Санкт-Петербург</p></div>
+									</div>
+								</li>
+								<li>
+									<p class="number"><a href="tel:8 (800) 123-34-45">8 (800) 123-34-45</a></p>
+								</li>
+							</ul>
+							<ul class="nav navbar-nav navbar-right">
+								<li><a href="#" class="LogIn icon my-flex"><div><i></i></div><div><p>Войти</p></div></a></li>
+								<li><a href="#" class="btn btn-orange">Купить, продать</a></li>
+							</ul>
+						</div><!-- /.navbar-collapse -->
+					</div><!-- /.container-fluid -->
+				</nav>
+			</section>
+			<!-- header END -->
+			<!-- content  -->
+			<section class="content">
+				<div class="container">
+					<!--title and description-->
+					<div class="row">
+						<div class="col-xs-12 col-md-12 col-sm-12 ">
+							<h1>Новый товар</h1>
+						</div>
+					</div><!-- title end -->
+					<!-- Add item -->
+					<div class="Add-item">
+						<!-- Nav tabs -->
+						<div class="row">
+							<div class="col-xs-12 col-md-10 col-sm-10">
+								<ul class="Add-item-navigation">
+									<li class="active">
+										<a class="btn btn-info" href="#tab1" aria-controls="tab1" role="tab" data-toggle="tab">1. Выбор категории</a>
+									</li>
+									<li class="">
+										<a class="btn btn-info" href="#tab2" aria-controls="tab2" role="tab" data-toggle="tab">2. Информация о товаре</a>
+									</li>
+									<li class="disabled">
+										<a class="btn btn-info" href="#tab3" aria-controls="tab3" role="tab" data-toggle="tab">3. Цена, доставка и оплата</a>
+									</li>
+									<li class="disabled">
+										<a class="btn btn-info" href="#tab4" aria-controls="tab4" role="tab" data-toggle="tab">4. Подтверждение</a>
+									</li>
+								</ul>
+							</div>
+						</div><!-- Nav tabs END-->
+						<!-- Nav tabs content -->
+						<div class="row">
+							<div class="col-xs-12 col-md-10 col-sm-10">
+								<!-- Tab panes -->
+								<div class="tab-content Add-item-tab-content">
+									<div class="tab-pane" id="tab1">
+										step 1
+									</div>
+									<div class="tab-pane active" id="tab2">
+										<div class="row">
+											<div class="col-xs-12 col-md-12 col-sm-12">
+												<form class="Settings" autocomplete="off">
+													<div class="row">
+														<div class="col-xs-12 col-md-12 col-sm-12">
+															<h2>Местонахождения товара</h2>
+														</div>
+													</div>
+													<!--Город и регион -->
+													<div class="row">
+														<div class="col-xs-12 col-md-6 col-sm-6">
+															<div class="form-group">
+																<div class="row">
+																	<div class="col-xs-12 col-md-12 col-sm-12">
+																		<label>Город</label>
+																	</div>
+																	<div class="col-xs-12 col-md-12 col-sm-12">
+																		<select name="userCity" class="form-control" data-item="select">
+																			<option value="1" selected disabled>1</option>
+																			<option value="2">2</option>
+																			<option value="3">3</option>
+																			<option value="4">4</option>
+																			<option value="5">5</option>
+																		</select>
+																	</div>
+																</div>
+															</div>
+														</div>
+														<div class="col-xs-12 col-md-6 col-sm-6">
+															<div class="form-group">
+																<div class="row">
+																	<div class="col-xs-12 col-md-12 col-sm-12">
+																		<label>Регион</label>
+																	</div>
+																	<div class="col-xs-12 col-md-12 col-sm-12">
+																		<select name="userRegion" class="form-control" data-item="select">
+																			<option value="1">1</option>
+																			<option value="1">1</option>
+																			<option value="1">1</option>
+																			<option value="1">1</option>
+																			<option value="1">1</option>
+																		</select>
+																	</div>
+																</div>
+															</div>
+														</div>
+													</div><!--Город и регион END-->
+
+													<!--Адресс -->
+													<div class="row">
+														<div class="col-xs-12 col-md-12 col-sm-12">
+															<div class="form-group">
+																<div class="row">
+																	<div class="col-xs-12 col-md-12 col-sm-12">
+																		<label>Адрес</label>
+																	</div>
+																	<div class="col-xs-12 col-md-12 col-sm-12">
+																		<input type="text"  name="userAddress" class="form-control" placeholder="Введите Ваш адрес">
+																	</div>
+																</div>
+															</div>
+														</div>
+													</div><!--Адресс END-->
+
+													<div class="row">
+														<div class="col-xs-12 col-md-12 col-sm-12">
+															<hr>
+														</div>
+													</div>
+													<div class="row">
+														<div class="col-xs-12 col-md-12 col-sm-12">
+															<h2>Характеристики автомобиля</h2>
+														</div>
+													</div>
+													<!--Марка -->
+													<div class="row">
+														<div class="col-xs-12 col-md-12 col-sm-12">
+															<div class="form-group">
+																<div class="row">
+																	<div class="col-xs-12 col-md-12 col-sm-12">
+																		<label>Марка</label>
+																	</div>
+																	<div class="col-xs-12 col-md-12 col-sm-12">
+																		<select name="carMark" class="form-control" data-item="select">
+																			<option value="1">1</option>
+																			<option value="1">1</option>
+																			<option value="1">1</option>
+																			<option value="1">1</option>
+																			<option value="1">1</option>
+																		</select>
+																	</div>
+																</div>
+															</div>
+														</div>
+													</div><!--Марка END-->
+
+													<!--Модель -->
+													<div class="row">
+														<div class="col-xs-12 col-md-12 col-sm-12">
+															<div class="form-group">
+																<div class="row">
+																	<div class="col-xs-12 col-md-12 col-sm-12">
+																		<label>Модель</label>
+																	</div>
+																	<div class="col-xs-12 col-md-12 col-sm-12">
+																		<select name="carModel" class="form-control" data-item="select">
+																			<option value="1">1</option>
+																			<option value="1">1</option>
+																			<option value="1">1</option>
+																			<option value="1">1</option>
+																			<option value="1">1</option>
+																		</select>
+																	</div>
+																</div>
+															</div>
+														</div>
+													</div><!--Модель END-->
+
+													<!--Год выпуска -->
+													<div class="row">
+														<div class="col-xs-12 col-md-12 col-sm-12">
+															<div class="form-group">
+																<div class="row">
+																	<div class="col-xs-12 col-md-12 col-sm-12">
+																		<label>Год выпуска</label>
+																	</div>
+																	<div class="col-xs-12 col-md-12 col-sm-12">
+																		<select name="carBuildYear" class="form-control" data-item="select">
+																			<option value="1">1</option>
+																			<option value="1">1</option>
+																			<option value="1">1</option>
+																			<option value="1">1</option>
+																			<option value="1">1</option>
+																		</select>
+																	</div>
+																</div>
+															</div>
+														</div>
+													</div><!--Год выпуска END-->
+
+													<!--Пробег -->
+													<div class="row">
+														<div class="col-xs-12 col-md-12 col-sm-12">
+															<div class="form-group">
+																<div class="row">
+																	<div class="col-xs-12 col-md-12 col-sm-12">
+																		<label>Пробег</label>
+																	</div>
+																	<div class="col-xs-12 col-md-12 col-sm-12">
+																		<input type="number"  name="carRoadTrip" class="form-control" placeholder="От 1 до 1 000 000">км
+																	</div>
+																</div>
+															</div>
+														</div>
+													</div><!--Пробег END-->
+
+													<!--Состояние -->
+													<div class="row">
+														<div class="col-xs-12 col-md-12 col-sm-12">
+															<div class="form-group">
+																<div class="row">
+																	<div class="col-xs-12 col-md-12 col-sm-12">
+																		<label>Состояние</label>
+																	</div>
+																	<div class="col-xs-12 col-md-12 col-sm-12">
+																		<select name="carStatus" class="form-control" data-item="select">
+																			<option value="1">1</option>
+																			<option value="1">1</option>
+																			<option value="1">1</option>
+																			<option value="1">1</option>
+																			<option value="1">1</option>
+																		</select>
+																	</div>
+																</div>
+															</div>
+														</div>
+													</div><!--Состояние END-->
+
+													<!--VIN-номер -->
+													<div class="row">
+														<div class="col-xs-12 col-md-12 col-sm-12">
+															<div class="form-group">
+																<div class="row">
+																	<div class="col-xs-12 col-md-6 col-sm-6">
+																		<div class="row">
+																			<div class="col-xs-12 col-md-12 col-sm-12">
+																				<label>VIN-номер</label>
+																			</div>
+																			<div class="col-xs-12 col-md-12 col-sm-12">
+																				<input type="text"  name="carVIN" class="form-control" placeholder="JN1WNYD21U0000001">
+																			</div>
+																		</div>
+																	</div>
+																	<div class="col-xs-12 col-md-6 col-sm-6">
+																		<div class="my-tooltip">
+																			<div>
+																				<i class="fa fa-question-circle" data-html="true" data-toggle="tooltip" data-placement="right" title="<div class='tooltip-inner-header'>Не подтвержден. <a href='#''>Подтвердить</a></div><div><small>Чтобы начать продавать товары на inlot.ru необходимо подтвердить номер телефона</small></div>"></i>
+																			</div>
+																		</div>
+																	</div>
+																</div>
+															</div>
+														</div>
+													</div><!--VIN-номер END-->
+													<!--ПТС и Владельцев по ПТС -->
+
+													<div class="row">
+														<div class="col-xs-12 col-md-6 col-sm-6">
+															<div class="form-group">
+																<div class="row">
+																	<div class="col-xs-12 col-md-12 col-sm-12">
+																		<label>ПТС</label>
+																	</div>
+																	<div class="col-xs-12 col-md-12 col-sm-12">
+																		<select name="carPTS" class="form-control" >
+																			<option value="original">Оригинал</option>
+																			<option value="dublicate">Дубликат</option>
+																		</select>
+																	</div>
+																</div>
+															</div>
+														</div>
+														<div class="col-xs-12 col-md-6 col-sm-6">
+															<div class="form-group">
+																<div class="row">
+																	<div class="col-xs-12 col-md-12 col-sm-12">
+																		<label>Владельцев по ПТС</label>
+																	</div>
+																	<div class="col-xs-12 col-md-12 col-sm-12">
+																		<select name="userRegion" class="form-control" data-item="select">
+																			<option value="noOwners">Не было владельцев</option>
+																			<option value="1">1</option>
+																			<option value="2">2</option>
+																			<option value="3">3</option>
+																			<option value="more then three">3 и более</option>
+																		</select>
+																	</div>
+																</div>
+															</div>
+														</div>
+													</div><!--ПТС и Владельцев по ПТС END-->
+
+													<!--Привод -->
+													<div class="row">
+														<div class="col-xs-12 col-md-12 col-sm-12">
+															<div class="form-group">
+																<div class="row">
+																	<div class="col-xs-12 col-md-12 col-sm-12">
+																		<label>Привод</label>
+																	</div>
+																	<div class="col-xs-12 col-md-12 col-sm-12">
+																		<select name="carStatus" class="form-control" data-item="select">
+																			<option value="1">1</option>
+																			<option value="1">1</option>
+																			<option value="1">1</option>
+																			<option value="1">1</option>
+																			<option value="1">1</option>
+																		</select>
+																	</div>
+																</div>
+															</div>
+														</div>
+													</div><!--Привод END-->
+
+													<!--Тип кузова -->
+													<div class="row">
+														<div class="col-xs-12 col-md-12 col-sm-12">
+															<div class="form-group">
+																<div class="row">
+																	<div class="col-xs-12 col-md-12 col-sm-12">
+																		<label>Тип кузова</label>
+																	</div>
+																	<div class="col-xs-12 col-md-12 col-sm-12">
+																		<select name="carStatus" class="form-control" data-item="select">
+																			<option value="1">1</option>
+																			<option value="1">1</option>
+																			<option value="1">1</option>
+																			<option value="1">1</option>
+																			<option value="1">1</option>
+																		</select>
+																	</div>
+																</div>
+															</div>
+														</div>
+													</div><!--Тип кузова END-->
+
+													<!--Цвет -->
+													<div class="row">
+														<div class="col-xs-12 col-md-12 col-sm-12">
+															<div class="form-group">
+																<div class="row">
+																	<div class="col-xs-12 col-md-12 col-sm-12">
+																		<label>Цвет</label>
+																	</div>
+																	<div class="col-xs-12 col-md-12 col-sm-12">
+																		<select name="carStatus" class="form-control" data-item="select">
+																			<option value="1">1</option>
+																			<option value="1">1</option>
+																			<option value="1">1</option>
+																			<option value="1">1</option>
+																			<option value="1">1</option>
+																		</select>
+																	</div>
+																</div>
+															</div>
+														</div>
+													</div><!--Цвет END-->
+													
+													<!--Тип двигателя Объем двигателя Мощность -->
+													<div class="row">
+														<div class="col-xs-12 col-md-4 col-sm-4">
+															<div class="form-group">
+																<div class="row">
+																	<div class="col-xs-12 col-md-12 col-sm-12">
+																		<label>Тип двигателя</label>
+																	</div>
+																	<div class="col-xs-12 col-md-12 col-sm-12">
+																		<select name="carMotorClass" class="form-control" data-item="select">
+																			<option value="1">1</option>
+																			<option value="1">1</option>
+																			<option value="1">1</option>
+																			<option value="1">1</option>
+																			<option value="1">1</option>
+																		</select>
+																	</div>
+																</div>
+															</div>
+														</div>
+														<div class="col-xs-12 col-md-4 col-sm-4">
+															<div class="form-group">
+																<div class="row">
+																	<div class="col-xs-12 col-md-12 col-sm-12">
+																		<label>Объем двигателя</label>
+																	</div>
+																	<div class="col-xs-12 col-md-12 col-sm-12">
+																		<input type="text"  name="carEngineСapacity" class="form-control" placeholder="см3">см3
+																	</div>
+																</div>
+															</div>
+														</div>
+														<div class="col-xs-12 col-md-4 col-sm-4">
+															<div class="form-group">
+																<div class="row">
+																	<div class="col-xs-12 col-md-12 col-sm-12">
+																		<label>Мощность</label>
+																	</div>
+																	<div class="col-xs-12 col-md-12 col-sm-12">
+																		<input type="text"  name="carBacklightPower" class="form-control" placeholder="см3">л.с.
+																	</div>
+																</div>
+															</div>
+														</div>
+													</div><!--Тип двигателя Объем двигателя Мощность END-->
+
+													<!--Руль -->
+													<div class="row">
+														<div class="col-xs-12 col-md-12 col-sm-12">
+															<div class="form-group">
+																<div class="row">
+																	<div class="col-xs-12 col-md-12 col-sm-12">
+																		<label>Руль</label>
+																	</div>
+																	<div class="col-xs-12 col-md-12 col-sm-12">
+																		<select name="carSteeringWheel" class="form-control" data-item="select">
+																			<option value="1">1</option>
+																			<option value="1">1</option>
+																			<option value="1">1</option>
+																			<option value="1">1</option>
+																			<option value="1">1</option>
+																		</select>
+																	</div>
+																</div>
+															</div>
+														</div>
+													</div><!--Руль END-->
+
+													<!--КПП -->
+													<div class="row">
+														<div class="col-xs-12 col-md-12 col-sm-12">
+															<div class="form-group">
+																<div class="row">
+																	<div class="col-xs-12 col-md-12 col-sm-12">
+																		<label>КПП</label>
+																	</div>
+																	<div class="col-xs-12 col-md-12 col-sm-12">
+																		<select name="carTransmission" class="form-control" data-item="select">
+																			<option value="1">1</option>
+																			<option value="1">1</option>
+																			<option value="1">1</option>
+																			<option value="1">1</option>
+																			<option value="1">1</option>
+																		</select>
+																	</div>
+																</div>
+															</div>
+														</div>
+													</div><!--КПП END-->
+													
+													<div class="row">
+														<div class="col-xs-12 col-md-12 col-sm-12">
+															<hr>
+														</div>
+													</div>
+													
+													<div class="row">
+														<div class="col-xs-12 col-md-12 col-sm-12">
+															<h2>Комплектация</h2>
+														</div>
+													</div>
+
+													<!--Комплектация -->
+													<div class="row">
+														<div class="col-xs-12 col-md-3 col-sm-3">
+															<div class="form-group">
+																<p class="checkbox-title"><strong>Экстерьер</strong></p>
+																<div class="checkbox">
+																	<label>
+																		<input type="checkbox"> Люк на крыше
+																	</label>
+																</div>
+																<div class="checkbox">
+																	<label>
+																		<input type="checkbox">Тонированные стекла
+																	</label>
+																</div>
+																<div class="checkbox">
+																	<label>
+																		<input type="checkbox">Ксеноновые фары
+																	</label>
+																</div>
+																<div class="checkbox">
+																	<label>
+																		<input type="checkbox">Легкоспланые диски
+																	</label>
+																</div>
+
+																<p class="checkbox-title"><strong>Экстерьер</strong></p>
+																<div class="checkbox">
+																	<label>
+																		<input type="checkbox">Антиблокировочная система (ABS)
+																	</label>
+																</div>
+																<div class="checkbox">
+																	<label>
+																		<input type="checkbox">Антипробуксовочная система
+																	</label>
+																</div>
+																<div class="checkbox">
+																	<label>
+																		<input type="checkbox">Система курсовой устойчивости
+																	</label>
+																</div>
+																<div class="checkbox">
+																	<label>
+																		<input type="checkbox">Парктроник
+																	</label>
+																</div>
+
+																<p class="checkbox-title"><strong>Экстерьер</strong></p>
+																<div class="radio">
+																	<label>
+																		<input type="radio" name="thisOne">Антиблокировочная система (ABS)
+																	</label>
+																</div>
+																<div class="radio">
+																	<label>
+																		<input type="radio" name="thisOne">Антипробуксовочная система
+																	</label>
+																</div>
+																<div class="radio">
+																	<label>
+																		<input type="radio" name="thisOne">Система курсовой устойчивости
+																	</label>
+																</div>
+																<div class="radio">
+																	<label>
+																		<input type="radio" name="thisOne">Парктроник
+																	</label>
+																</div>
+															</div>
+														</div>
+
+														<div class="col-xs-12 col-md-3 col-sm-3">
+															<div class="form-group">
+																<p class="checkbox-title"><strong>Салон</strong></p>
+																<div class="radio">
+																	<label>
+																		<input type="radio" name="thisSecond">ткань
+																	</label>
+																</div>
+																<div class="radio">
+																	<label>
+																		<input type="radio" name="thisSecond">велюр
+																	</label>
+																</div>
+																<div class="radio">
+																	<label>
+																		<input type="radio" name="thisSecond">кожа
+																	</label>
+																</div>
+																<div class="radio">
+																	<label>
+																		<input type="radio" name="thisSecond">комбинированный
+																	</label>
+																</div>
+
+																<p class="checkbox-title"><strong>Цвет салона</strong></p>
+																<div class="radio">
+																	<label>
+																		<input type="radio" name="thisThird">темный
+																	</label>
+																</div>
+																<div class="radio">
+																	<label>
+																		<input type="radio" name="thisThird">светлый
+																	</label>
+																</div>
+																<p class="checkbox-title"><strong>Функциональное оборудование</strong></p>
+																<div class="checkbox">
+																	<label>
+																		<input type="checkbox">Бортовой компьютер
+																	</label>
+																</div>
+																<div class="checkbox">
+																	<label>
+																		<input type="checkbox">Датчик дождя
+																	</label>
+																</div>
+																<div class="checkbox">
+																	<label>
+																		<input type="checkbox">Датчик света
+																	</label>
+																</div>
+																<div class="checkbox">
+																	<label>
+																		<input type="checkbox">Круиз-контроль
+																	</label>
+																</div>
+																<div class="checkbox">
+																	<label>
+																		<input type="checkbox">Навигационная система
+																	</label>
+																</div>
+																<div class="checkbox">
+																	<label>
+																		<input type="checkbox">Обогрев зеркал
+																	</label>
+																</div>
+																<div class="checkbox">
+																	<label>
+																		<input type="checkbox">Омыватель фар
+																	</label>
+																</div>
+																<div class="checkbox">
+																	<label>
+																		<input type="checkbox">Усилитель руля
+																	</label>
+																</div>
+																<div class="checkbox">
+																	<label>
+																		<input type="checkbox">Центральный замок
+																	</label>
+																</div>
+															</div>
+														</div>
+
+														<div class="col-xs-12 col-md-3 col-sm-3">
+															<div class="form-group">
+																<p class="checkbox-title"><strong>Регулировки</strong></p>
+																<div class="checkbox">
+																	<label>
+																		<input type="checkbox"> Электропривод зеркал
+																	</label>
+																</div>
+
+																<p class="checkbox-title"><strong>Стеклоподъемники</strong></p>
+																<div class="radio">
+																	<label>
+																		<input type="radio" name="thisForth">ручные
+																	</label>
+																</div>
+																<div class="radio">
+																	<label>
+																		<input type="radio" name="thisForth">электро передние
+																	</label>
+																</div>
+																<div class="radio">
+																	<label>
+																		<input type="radio" name="thisForth">электро все
+																	</label>
+																</div>
+
+																<p class="checkbox-title"><strong>Сиденье водителя</strong></p>
+																<div class="radio">
+																	<label>
+																		<input type="radio" name="thisFives">ручная регулировка
+																	</label>
+																</div>
+																<div class="radio">
+																	<label>
+																		<input type="radio" name="thisFives">ручная регулировка по высоте
+																	</label>
+																</div>
+																<div class="radio">
+																	<label>
+																		<input type="radio" name="thisFives">электро регулировка
+																	</label>
+																</div>
+																<div class="radio">
+																	<label>
+																		<input type="radio" name="thisFives">с памятью положения
+																	</label>
+																</div>
+
+																<p class="checkbox-title"><strong>Сиденье пассажира</strong></p>
+																<div class="radio">
+																	<label>
+																		<input type="radio" name="thisSixs">ручная регулировка
+																	</label>
+																</div>
+																<div class="radio">
+																	<label>
+																		<input type="radio" name="thisSixs">ручная регулировка по высоте
+																	</label>
+																</div>
+																<div class="radio">
+																	<label>
+																		<input type="radio" name="thisSixs">электро регулировка
+																	</label>
+																</div>
+																<div class="radio">
+																	<label>
+																		<input type="radio" name="thisSixs">с памятью положения
+																	</label>
+																</div>
+
+																<p class="checkbox-title"><strong>Регулировка руля</strong></p>
+																<div class="radio">
+																	<label>
+																		<input type="radio" name="thisSixs">отсутствует
+																	</label>
+																</div>
+																<div class="radio">
+																	<label>
+																		<input type="radio" name="thisSixs">в одной плоскости
+																	</label>
+																</div>
+																<div class="radio">
+																	<label>
+																		<input type="radio" name="thisSixs">в двух плоскостях
+																	</label>
+																</div>
+																<div class="radio">
+																	<label>
+																		<input type="radio" name="thisSixs">электро регулировка
+																	</label>
+																</div>
+																
+															</div>
+														</div>
+
+														<div class="col-xs-12 col-md-3 col-sm-3">
+															<div class="form-group">
+																<p class="checkbox-title"><strong>Комфорт</strong></p>
+																<div class="checkbox">
+																	<label>
+																		<input type="checkbox"> Подогрев руля
+																	</label>
+																</div>
+																<div class="checkbox">
+																	<label>
+																		<input type="checkbox">Обогрев сидений
+																	</label>
+																</div>
+																
+																<p class="checkbox-title"><strong>Климат</strong></p>
+																<div class="radio">
+																	<label>
+																		<input type="radio" name="thisSevens">отсутствует
+																	</label>
+																</div>
+																<div class="radio">
+																	<label>
+																		<input type="radio" name="thisSevens">кондиционер
+																	</label>
+																</div>
+																<div class="radio">
+																	<label>
+																		<input type="radio" name="thisSevens">климат-контроль 1-зонный
+																	</label>
+																</div>
+																<div class="radio">
+																	<label>
+																		<input type="radio" name="thisSevens">климат-контроль 2-зонный
+																	</label>
+																</div>
+																<div class="radio">
+																	<label>
+																		<input type="radio" name="thisSevens">климат-контроль 3-зонный
+																	</label>
+																</div>
+
+																<p class="checkbox-title"><strong>Сигнализация</strong></p>
+																<div class="checkbox">
+																	<label>
+																		<input type="checkbox">Штатная
+																	</label>
+																</div>
+																<div class="checkbox">
+																	<label>
+																		<input type="checkbox">Иммобилайзер
+																	</label>
+																</div>
+																<div class="checkbox">
+																	<label>
+																		<input type="checkbox">Обратная связь
+																	</label>
+																</div>
+																<div class="checkbox">
+																	<label>
+																		<input type="checkbox">Дистанционный запуск двигателя
+																	</label>
+																</div>
+
+																<p class="checkbox-title"><strong>Мультимедиа</strong></p>
+																<div class="checkbox">
+																	<label>
+																		<input type="checkbox">CD
+																	</label>
+																</div>
+																<div class="checkbox">
+																	<label>
+																		<input type="checkbox">TV
+																	</label>
+																</div>
+															</div>
+														</div>
+
+													</div><!--Комплектация END-->
+
+													<div class="row">
+														<div class="col-xs-12 col-md-12 col-sm-12">
+															<h2>Фото и видео</h2>
+														</div>
+													</div>
+													
+													<!--Фото и видео -->
+													<div class="row">
+														<div class="col-xs-12 col-md-12 col-sm-12">
+															<div class="form-group">
+																<div class="row">
+																	<div class="col-xs-12 col-md-12 col-sm-12">
+																		<p class="photo-subtitle">Вы можете прикрепить не более 10-ти фотографий автомобиля</p>
+																	</div>
+																</div>
+																<div class="row">
+																	<div class="col-xs-12 col-md-12 col-sm-12">
+																		<!-- MINIMUM IMAGE DIMENSIONS -->
+																		<input data-input="file" name="DIMENSIONS" type="file" multiple class="file-loading form-control" accept="image/*">
+
+																	</div>
+																	<div class="col-xs-12 col-md-12 col-sm-12">
+																		
+																	</div>
+																</div>
+															</div>
+														</div>
+													</div><!--Фото и видео END-->
+													<!--Фото и видео -->
+													<div class="row">
+														<div class="col-xs-12 col-md-12 col-sm-12">
+															<div class="form-group">
+																<div class="row">
+																	<div class="col-xs-12 col-md-12 col-sm-12">
+																		<p class="photo-subtitle">Вы можете прикрепить не более 10-ти фотографий автомобиля</p>
+																	</div>
+																</div>
+																<div class="row">
+																	<div class="col-xs-12 col-md-8 col-sm-8">
+																		<div class="input-group">
+																			<input type="text" class="form-control" placeholder="Username" aria-describedby="basic-addon1">
+																			<a href="#" class="btn btn-default input-group-addon" id="basic-addon1">Добавить ссылку</a>
+																		</div>
+																	</div>
+																	<div class="col-xs-12 col-md-4 col-sm-4">
+																		<!-- MINIMUM IMAGE DIMENSIONS -->
+																		<input id="input-dim-1" name="inputdim1[]" type="file" multiple class="file-loading form-control" accept="image/*">
+																	</div>
+																</div>
+															</div>
+														</div>
+													</div><!--Фото и видео END-->
+													<div class="row">
+														<div class="col-xs-12 col-md-12 col-sm-12">
+															<hr>
+														</div>
+													</div>
+													<!--Комментарий продавца -->
+													<div class="row">
+														<div class="col-xs-12 col-md-12 col-sm-12">
+															<div class="form-group">
+																<div class="row">
+																	<div class="col-xs-12 col-md-12 col-sm-12">
+																		<label>Комментарий продавца</label>
+																	</div>
+																	<div class="col-xs-12 col-md-12 col-sm-12">
+																		<textarea type="text" name="carDescription" class="form-control" rows="6"></textarea>
+																	</div>
+																</div>
+															</div>
+														</div>
+													</div><!--Комментарий продавца END-->
+													<div class="row">
+														<div class="col-xs-12 col-md-12 col-sm-12">
+															<hr>
+														</div>
+													</div>
+													<div class="row">
+														<div class="col-xs-12 col-md-12 col-sm-12">
+															<h2>Дефекты автомобиля</h2>
+														</div>
+													</div>
+													<!--Один дефект-->
+													<!--Дефекты автомобиля -->
+													<div class="row">
+														<div class="col-xs-12 col-md-4 col-sm-4">
+															<div class="form-group">
+																<div class="row">
+																	<div class="col-xs-12 col-md-12 col-sm-12">
+																		<label>Деталь</label>
+																	</div>
+																	<div class="col-xs-12 col-md-12 col-sm-12">
+																		<select name="carDetailDefect" class="form-control" data-item="select">
+																			<option value="1">1</option>
+																			<option value="1">1</option>
+																			<option value="1">1</option>
+																			<option value="1">1</option>
+																			<option value="1">1</option>
+																		</select>
+																	</div>
+																</div>
+															</div>
+														</div>
+														<div class="col-xs-12 col-md-8 col-sm-8">
+															<div class="form-group">
+																<div class="row">
+																	<div class="col-xs-12 col-md-12 col-sm-12">
+																		<label>Описание дефекта</label>
+																	</div>
+																	<div class="col-xs-12 col-md-12 col-sm-12">
+																		<input type="text" class="form-control" name="carDescriptionDefect">
+																	</div>
+																</div>
+															</div>
+														</div>
+													</div><!--Дефекты автомобиля END-->
+													<!--Вы можете прикрепить не более 10-ти фотографий автомобиля -->
+													<div class="row">
+														<div class="col-xs-12 col-md-12 col-sm-12">
+															<div class="form-group">
+																<div class="row">
+																	<div class="col-xs-12 col-md-12 col-sm-12">
+																		<p class="photo-subtitle">Вы можете прикрепить не более 6-ти фотографий автомобиля</p>
+																	</div>
+																</div>
+																<div class="row">
+																	<div class="col-xs-12 col-md-12 col-sm-12">
+																		<!-- MINIMUM IMAGE DIMENSIONS -->
+																		<input data-input="file" name="inputdim1[]" type="file" multiple class="file-loading form-control" accept="image/*">
+
+																	</div>
+																	<div class="col-xs-12 col-md-12 col-sm-12">
+																		
+																	</div>
+																</div>
+															</div>
+														</div>
+													</div><!--Вы можете прикрепить не более 10-ти фотографий автомобиля END-->
+													<!--Один дефект END-->
+													<!--Один дефект-->
+													<!--Дефекты автомобиля -->
+													<div class="row">
+														<div class="col-xs-12 col-md-4 col-sm-4">
+															<div class="form-group">
+																<div class="row">
+																	<div class="col-xs-12 col-md-12 col-sm-12">
+																		<label>Деталь</label>
+																	</div>
+																	<div class="col-xs-12 col-md-12 col-sm-12">
+																		<input type="text" class="form-control" name="carDetailDefect">
+																	</div>
+																</div>
+															</div>
+														</div>
+														<div class="col-xs-12 col-md-8 col-sm-8">
+															<div class="form-group">
+																<div class="row">
+																	<div class="col-xs-12 col-md-12 col-sm-12">
+																		<label>Описание дефекта</label>
+																	</div>
+																	<div class="col-xs-12 col-md-12 col-sm-12">
+																		<input type="text" class="form-control" name="carDescriptionDefect">
+																	</div>
+																</div>
+															</div>
+														</div>
+													</div><!--Дефекты автомобиля END-->
+													<div class="row">
+														<div class="col-xs-12 col-md-12 col-sm-12">
+															<div class="form-group">
+																<div class="row">
+																	<div class="col-xs-12 col-md-12 col-sm-12">
+																		<p class="photo-subtitle">Вы можете прикрепить не более 10-ти фотографий автомобиля</p>
+																	</div>
+																</div>
+																<div class="row">
+																	<div class="col-xs-12 col-md-12 col-sm-12">
+																		<!-- MINIMUM IMAGE DIMENSIONS -->
+																		<input data-input="file" name="inputdim1[]" type="file" multiple class="file-loading form-control" accept="image/*">
+
+																	</div>
+																	<div class="col-xs-12 col-md-12 col-sm-12">
+																		
+																	</div>
+																</div>
+															</div>
+														</div>
+													</div><!--Вы можете прикрепить не более 10-ти фотографий автомобиля END-->
+													<!--Один дефект END-->
+													<div class="row">
+														<div class="col-xs-12 col-md-12 col-sm-12">
+															<br>
+															<br>
+															<button type="button" class="btn btn-success"><span><i class="fa fa-plus" aria-hidden="true"></i></span><span>Добавить дефект</span></button>
+														</div>
+													</div>
+													<div class="row">
+														<div class="col-xs-12 col-md-12 col-sm-12">
+															<hr>
+														</div>
+													</div>
+													<div class="row">
+														<div class="col-xs-12 col-md-12 col-sm-12">
+															<h2>Шины и диски</h2>
+														</div>
+													</div>
+													<!--Тип шин -->
+													<div class="row">
+														<div class="col-xs-12 col-md-12 col-sm-12">
+															<div class="form-group">
+																<div class="row">
+																	<div class="col-xs-12 col-md-12 col-sm-12">
+																		<label>Тип шин</label>
+																	</div>
+																	<div class="col-xs-12 col-md-12 col-sm-12">
+																		<select name="carTierModel" class="form-control" data-item="select">
+																			<option value="1">1</option>
+																			<option value="1">1</option>
+																			<option value="1">1</option>
+																			<option value="1">1</option>
+																			<option value="1">1</option>
+																		</select>
+																	</div>
+																</div>
+															</div>
+														</div>
+													</div><!--Тип шин END-->
+
+													<!--Левое переднее -->
+													<div class="row">
+														<div class="col-xs-12 col-md-3 col-sm-3">
+															<p class="checkbox-title"><strong>Левое переднее</strong></p>
+															<div class="form-group">
+																<div class="row">
+																	<div class="col-xs-12 col-md-12 col-sm-12">
+																		<label>Глубина профилей</label>
+																	</div>
+																	<div class="col-xs-12 col-md-12 col-sm-12">
+																		<div class="input-group">
+																			<input type="text" class="form-control" placeholder="Username">
+																			<span href="#" class="input-group-addon">мм</span>
+																		</div>
+																	</div>
+																</div>
+															</div>
+															<div class="form-group">
+																<div class="row">
+																	<div class="col-xs-12 col-md-12 col-sm-12">
+																		<label>Дефекты дисков</label>
+																	</div>
+																	<div class="col-xs-12 col-md-12 col-sm-12">
+																		<input type="text" class="form-control" placeholder="Username">
+																	</div>
+																</div>
+															</div>
+															<div class="form-group">
+																<div class="row">
+																	<div class="col-xs-12 col-md-12 col-sm-12">
+																		<label>Дефекты колпаков</label>
+																	</div>
+																	<div class="col-xs-12 col-md-12 col-sm-12">
+																		<input type="text" class="form-control" placeholder="Username">
+																	</div>
+																</div>
+															</div>
+															<div class="form-group">
+																<div class="row">
+																	<div class="col-xs-12 col-md-12 col-sm-12">
+																		<input data-input="file" name="inputdim1[]" type="file" multiple class="file-loading form-control" accept="image/*">
+																	</div>
+																</div>
+															</div>
+														</div>
+														<div class="col-xs-12 col-md-3 col-sm-3">
+															<p class="checkbox-title"><strong>Левое переднее</strong></p>
+															<div class="form-group">
+																<div class="row">
+																	<div class="col-xs-12 col-md-12 col-sm-12">
+																		<label>Глубина профилей</label>
+																	</div>
+																	<div class="col-xs-12 col-md-12 col-sm-12">
+																		<div class="input-group">
+																			<input type="text" class="form-control" placeholder="Username">
+																			<span href="#" class="input-group-addon">мм</span>
+																		</div>
+																	</div>
+																</div>
+															</div>
+															<div class="form-group">
+																<div class="row">
+																	<div class="col-xs-12 col-md-12 col-sm-12">
+																		<label>Дефекты дисков</label>
+																	</div>
+																	<div class="col-xs-12 col-md-12 col-sm-12">
+																		<input type="text" class="form-control" placeholder="Username">
+																	</div>
+																</div>
+															</div>
+															<div class="form-group">
+																<div class="row">
+																	<div class="col-xs-12 col-md-12 col-sm-12">
+																		<label>Дефекты колпаков</label>
+																	</div>
+																	<div class="col-xs-12 col-md-12 col-sm-12">
+																		<input type="text" class="form-control" placeholder="Username">
+																	</div>
+																</div>
+															</div>
+															<div class="form-group">
+																<div class="row">
+																	<div class="col-xs-12 col-md-12 col-sm-12">
+																		<input data-input="file" name="inputdim1[]" type="file" multiple class="file-loading form-control" accept="image/*">
+																	</div>
+																</div>
+															</div>
+														</div>
+														<div class="col-xs-12 col-md-3 col-sm-3">
+															<p class="checkbox-title"><strong>Левое переднее</strong></p>
+															<div class="form-group">
+																<div class="row">
+																	<div class="col-xs-12 col-md-12 col-sm-12">
+																		<label>Глубина профилей</label>
+																	</div>
+																	<div class="col-xs-12 col-md-12 col-sm-12">
+																		<div class="input-group">
+																			<input type="text" class="form-control" placeholder="Username">
+																			<span href="#" class="input-group-addon">мм</span>
+																		</div>
+																	</div>
+																</div>
+															</div>
+															<div class="form-group">
+																<div class="row">
+																	<div class="col-xs-12 col-md-12 col-sm-12">
+																		<label>Дефекты дисков</label>
+																	</div>
+																	<div class="col-xs-12 col-md-12 col-sm-12">
+																		<input type="text" class="form-control" placeholder="Username">
+																	</div>
+																</div>
+															</div>
+															<div class="form-group">
+																<div class="row">
+																	<div class="col-xs-12 col-md-12 col-sm-12">
+																		<label>Дефекты колпаков</label>
+																	</div>
+																	<div class="col-xs-12 col-md-12 col-sm-12">
+																		<input type="text" class="form-control" placeholder="Username">
+																	</div>
+																</div>
+															</div>
+															<div class="form-group">
+																<div class="row">
+																	<div class="col-xs-12 col-md-12 col-sm-12">
+																		<input data-input="file" name="inputdim1[]" type="file" multiple class="file-loading form-control" accept="image/*">
+																	</div>
+																</div>
+															</div>
+														</div>
+														<div class="col-xs-12 col-md-3 col-sm-3">
+															<p class="checkbox-title"><strong>Левое переднее</strong></p>
+															<div class="form-group">
+																<div class="row">
+																	<div class="col-xs-12 col-md-12 col-sm-12">
+																		<label>Глубина профилей</label>
+																	</div>
+																	<div class="col-xs-12 col-md-12 col-sm-12">
+																		<div class="input-group">
+																			<input type="text" class="form-control" placeholder="Username">
+																			<span href="#" class="input-group-addon">мм</span>
+																		</div>
+																	</div>
+																</div>
+															</div>
+															<div class="form-group">
+																<div class="row">
+																	<div class="col-xs-12 col-md-12 col-sm-12">
+																		<label>Дефекты дисков</label>
+																	</div>
+																	<div class="col-xs-12 col-md-12 col-sm-12">
+																		<input type="text" class="form-control" placeholder="Username">
+																	</div>
+																</div>
+															</div>
+															<div class="form-group">
+																<div class="row">
+																	<div class="col-xs-12 col-md-12 col-sm-12">
+																		<label>Дефекты колпаков</label>
+																	</div>
+																	<div class="col-xs-12 col-md-12 col-sm-12">
+																		<input type="text" class="form-control" placeholder="Username">
+																	</div>
+																</div>
+															</div>
+															<div class="form-group">
+																<div class="row">
+																	<div class="col-xs-12 col-md-12 col-sm-12">
+																		<input data-input="file" name="inputdim1[]" type="file" multiple class="file-loading form-control" accept="image/*">
+																	</div>
+																</div>
+															</div>
+														</div>
+													</div><!--Левое переднее END-->
+													<div class="row">
+														<div class="col-xs-12 col-md-12 col-sm-12">
+															<hr>
+														</div>
+													</div>
+													<div class="row">
+														<div class="col-xs-12 col-md-1 col-sm-2">
+															<a href="#" class="">Назад</a>
+															
+														</div>
+														<div class="col-xs-12 col-md-3 col-sm-3">
+															<button type="submit" class="btn btn-orange btn-block">Далее</button>
+														</div>
+													</div>
+													<!-- удалю это на шаге 3 для общего контент блока сделаю отступ-->
+													<div class="row">
+														<div class="col-xs-12 col-md-12 col-sm-12">
+															<br>
+															<br>
+														</div>
+													</div><!-- удалю это на шаге 3 для общего контент блока сделаю отступ END-->
+												</form>
+											</div>
+										</div>
+									</div>
+									<div class="tab-pane" id="tab3">3</div>
+									<div class="tab-pane" id="tab4">4</div>
+								</div>
+							</div>
+						</div><!-- Nav tabs content END-->
+					</div><!-- Add item END-->
+
+				</div>
+			</section>
+			<!-- content END -->
+		</div>
+		<!-- sticky END -->
+		<!-- footer -->
+		<section class="footer">
+			<section class="footer-lvl-1">
+				<div class="container">
+					<div class="row">
+						<div class="col-xs-12 col-md-8 col-sm-8">
+							<ul class="flex">
+								<li><a href="#">О проекте</a></li>
+								<li><a href="#">Правила</a></li>
+								<li><a href="#">Обратная связь</a></li>
+								<li><a href="#">Помощь</a></li>
+								<li><a href="#">Пользовательское соглашение</a></li>
+							</ul>
+						</div>
+						<div class="col-xs-12 col-md-4 col-sm-4">
+							<div class="flex end">
+								<div><p class="copy">&copy; 2016, inlot.ru</p></div>
+								<div><p class="team">Разработка — <a href="#">Horse Heads</a></p></div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</section>
+		</section>
+		<!-- footer END-->
+
+		<!-- include frameworks and app.less -->
+		<link href='assets/css/app.min.css' rel='stylesheet' type='text/css'>
+		<script src="assets/js/bootstrap.min.js" type="text/javascript"></script>
+		<script src="assets/js/jquery.maskedinput.js" type="text/javascript"></script>
+		<!--Select -->
+		<script src="assets/js/select2.min.js" type="text/javascript"></script>
+		<!--Select END-->
+		
+		<!--Validation -->
+		<script src="assets/js/formValidation.min.js" type="text/javascript"></script>
+		<script src="assets/js/framework/bootstrap.min.js" type="text/javascript"></script>
+		<script src="assets/js/language/ru_RU.js" type="text/javascript"></script>
+		<!--Validation END-->
+
+		<!--file upload -->
+		<script src="assets/js/canvas-to-blob.min.js" type="text/javascript"></script>
+		<script src="assets/js/fileinput.min.js" type="text/javascript"></script>
+		<script src="assets/js/language/fileinput_locale_ru.js" type="text/javascript"></script>
+		<!--file upload END -->
+
+		<script src="assets/js/app.js" type="text/javascript"></script>
+	</body>
+
+	</html>

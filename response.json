@@ -1,0 +1,7 @@
+{
+    "result": "error",
+    "fields": {
+        "companyName": "Имя компании используется",
+        "userName": "Имя используется"
+    }
+}

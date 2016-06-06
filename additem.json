@@ -1,0 +1,14 @@
+{
+    "category": {
+        "categoryId": "1",
+        "name": "Транспорт и запчасти",
+        "subcategory": {
+            "categoryId": "1",
+            "name": "Аксессуары",
+            "subcategory": {
+                "categoryId": "1",
+                "name": "Аксессуары",
+            }
+        }
+    }
+}

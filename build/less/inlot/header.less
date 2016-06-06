@@ -1,0 +1,202 @@
+.header {
+	.number {
+		font-size: @font-size-h2;
+		font-weight: 400;
+		a {
+			color: @gray-light;
+		}
+	}
+	.location {
+		color: #4B92BA;
+		&>div:first-child {
+			padding-right: 5px;
+			color: @gray-light;
+		}
+	}
+	//not reg
+	.LogIn {
+		color: #4B92BA;
+		display: flex !important;
+		line-height: 21px;
+		margin-right: 10px;
+		&>div:first-child {
+			padding-right: 8px;
+			color: @gray-light;
+		}
+	}
+	//registration user
+	.Notifications {
+		position: relative;
+		padding-top: 10px;
+		padding-right: 20px;
+		&.dropdown.open {
+			& > .Notifications-link {
+				background-color: transparent;
+			}
+		}
+		&-link {
+			position: relative;
+			i {
+				font-size: 21px;
+				color: @gray-light;
+			}
+			.badge {
+				padding: 2px 7px;
+				top: -12px;
+				right: -17px;
+				border-radius: 5px;
+				background: @brand-orange;
+				font-size: 10px;
+				font-weight: 400;
+				position: absolute;
+			}
+		}
+		.dropdown-menu {
+			min-width: 280px;
+			font-size: 13px;
+			padding: 8px 0;
+			color: lighten(@gray-base, 40%);
+			line-height: 1.8;
+			margin: 10px 0;
+			a {
+				color: @brand-info;
+			}
+			li {
+				padding: 0px 10px !important;
+			}
+		}
+	}
+	.User-shortcut {
+		padding:0px 0px 0px 10px;
+		&-link {
+			font-size: 21px;
+			color: @gray-light;
+			margin-left: 8px;
+		}
+		&.dropdown.open {
+			& > .User-shortcut-img,
+			& > .User-shortcut-link {
+				background-color: transparent;
+			}
+		}
+		&-name {
+			color: lighten(@gray-base, 40%);
+			font-size: 12px;
+		}
+		&-company {
+			color: lighten(@gray-base, 40%);
+		}
+		.dropdown-menu {
+			margin: 10px 0;
+			padding: 10px 0;
+			min-width: 180px;
+			.divider {
+				margin: 2px 0;
+				background-color: transparent;
+			}
+			a {
+				color: @brand-orange;
+				display: inline-block;
+				padding: 2px 0 !important;
+			}
+			li {
+				padding: 0px 10px !important;
+			}
+			.btn {
+				margin-top: 10px;
+				&-default {
+					background: #E4E4E4;
+					border-color: #E4E4E4;
+					color: lighten(@gray-base, 40%);
+					&:hover,&:focus {
+						background: darken(#E4E4E4, 10%);
+						border-color: darken(#E4E4E4, 10%);
+					}
+				}
+			}
+		}
+	}
+	.navbar-default {
+		border-bottom: 2px solid #eee;
+		border-top: none;
+		border-left: none;
+		border-right: none;
+		background: 0 0;
+		margin: 0;
+		border-radius: 0;
+		.navbar-nav {
+			display: flex;
+			align-items: center;
+			margin: 5px 0;
+			&.navbar-right {
+				margin-top: 9px;
+				margin-right: -20px;
+			}
+			li {
+				padding: 0 5px;
+			}
+			a {
+				padding:0;
+			}
+			p {
+				margin-bottom: 0;
+			}
+			.btn-orange {
+				color: #fff;
+				padding: 6px 22px;
+				&:hover,&:focus {
+					color: #fff;
+					background-color: #e36405;
+					border-color: #c05504;
+				}
+			}
+			&.bordered {
+				overflow: hidden;
+				li {
+					position: relative;
+					padding: 0 15px;
+					&:first-child {
+						&:after {
+							content: none;
+						}
+					}
+					&:after {
+						content: '';
+						left: 0;
+						height: 150px;
+						width: 1px;
+						top: -70px;
+						background: #eee;
+						position: absolute;
+					}
+				}
+			}
+		}
+	}
+	.navbar-brand {
+		height: auto;
+		padding: 10px;
+		img {
+			width: 60px;
+		}
+	}
+	&-lower {
+		background: lighten(@brand-info, 30%);
+		padding: 10px 0;
+		.form-group {
+			margin-bottom: 0;
+		}
+		form {
+			select {
+				width: 300px;
+			}
+			display: flex;
+			&>div:nth-child(1){
+				flex-grow: 1;
+			}
+			&>div:nth-child(2){
+				padding: 0 15px;
+			}
+		}
+	}
+}

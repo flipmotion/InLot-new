@@ -1,0 +1,56 @@
+//content
+.validation-right {
+	position: relative;
+	.validation-right-inner {
+		position: absolute;
+		left: 100%;
+		top: 0;
+		display: flex;
+		align-items: center;
+		width: 100%;
+		ul {
+			margin-bottom: 0;
+		}
+		.fa {
+			font-size: 21px;
+		}
+		&.help-block {
+			margin-top: 0;
+			margin-bottom: 0;
+		}
+		.help-block {
+			margin-top: 0;
+			margin-bottom: 0;
+		}
+		.form-control-feedback {
+			position: static;
+		}
+		small {
+			font-size: 100%;
+		}
+	}
+}
+.form-group .toggle-password {
+	color: @brand-info !important;
+	font-size: 21px;
+	right: 15px;
+	cursor: pointer;
+	pointer-events: auto;
+}
+.Registration {
+	.form-group {
+		.form-control {
+			border-color: @input-border;
+		}
+		&.has-success {
+			.form-control-feedback {
+				color: #A1CF69;
+			}
+		}
+		&.has-error {
+			.form-control-feedback {
+				color: #DD4B39;
+			}
+		}
+	}
+}
